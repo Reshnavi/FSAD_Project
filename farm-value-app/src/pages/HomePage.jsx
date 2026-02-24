@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Users, TrendingUp, Truck, Shield, ShoppingCart, CheckCircle } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { mockProducts } from '../data/mockData';
-import { Card, Badge } from '../components/UI';
+import { Card } from '../components/UI';
 import Button from '../components/Button';
 import ProductImage from '../components/ProductImage';
 
