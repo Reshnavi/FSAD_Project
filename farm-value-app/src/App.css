@@ -1,0 +1,79 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Nunito', 'Segoe UI', sans-serif;
+  background-color: #fafafa;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #2E7D32; border-radius: 4px; }
+
+/* ===== LINKS ===== */
+a { transition: opacity 0.2s; }
+a:hover { opacity: 0.8; }
+
+/* ===== BUTTONS ===== */
+button { font-family: inherit; transition: transform 0.15s, box-shadow 0.15s; }
+button:not(:disabled):hover { transform: translateY(-1px); }
+button:active { transform: translateY(0); }
+
+/* ===== INPUTS ===== */
+input, select, textarea {
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #2E7D32 !important;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.12);
+}
+
+/* ===== IMAGES ===== */
+img { display: block; max-width: 100%; }
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+main > * { animation: fadeIn 0.4s ease; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem !important; }
+  h2 { font-size: 1.5rem !important; }
+
+  /* Stack product detail grid */
+  div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Stack cart grid */
+  div[style*="grid-template-columns: 1fr 320px"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Stack admin/farmer overview grid */
+  div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+  nav div[style*="gap: 20px"] {
+    gap: 10px !important;
+  }
+}
