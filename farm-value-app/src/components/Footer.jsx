@@ -33,8 +33,8 @@ export default function Footer() {
             <h4 style={{ marginBottom: '15px', color: '#e5e7eb' }}>Contact</h4>
             {[
               [Mail, 'support@farmconnect.com'],
-              [Phone, '+1 (800) 123-4567'],
-              [MapPin, 'California, USA']
+              [Phone, '+91 12398765'],
+              [MapPin, 'India']
             ].map(([Icon, text], i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#9ca3af', marginBottom: '10px', fontSize: '0.9rem' }}>
                 <Icon size={15} color="#4CAF50" /> {text}
