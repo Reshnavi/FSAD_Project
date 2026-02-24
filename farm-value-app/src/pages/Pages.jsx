@@ -4,7 +4,7 @@ import { Search, Eye, ShoppingCart, ArrowLeft, CheckCircle, Trash2, Clock, Truck
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
 import { mockProducts, mockOrders, categories } from '../data/mockData';
-import { Card, Badge, Rating } from '../components/UI';
+import { Card } from '../components/UI';
 import Button from '../components/Button';
 import ProductImage from '../components/ProductImage';
 
