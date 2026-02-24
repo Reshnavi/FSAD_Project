@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Plus, Trash2, Eye, Package, ShoppingCart, DollarSign, Star, Clock, Truck, CheckCircle, Users, X, BarChart3 } from 'lucide-react';
+import { Plus, Trash2, Eye, Package, ShoppingCart, DollarSign, Star, Clock, Truck, CheckCircle, Users, X } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { mockProducts, mockOrders, mockUsers, categories } from '../data/mockData';
 import { Card, Badge } from '../components/UI';
